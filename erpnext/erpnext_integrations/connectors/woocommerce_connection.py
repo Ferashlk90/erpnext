@@ -190,7 +190,7 @@ def create_sales_order(order, woocommerce_settings, customer_name, sys_lang):
 	set_items_in_sales_order(new_sales_order, woocommerce_settings, order, sys_lang)
 	new_sales_order.flags.ignore_mandatory = True
 	new_sales_order.insert()
-	new_sales_order.submit()
+	# new_sales_order.submit()
 
 	frappe.db.commit()
 
